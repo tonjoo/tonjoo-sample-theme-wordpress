@@ -32,3 +32,21 @@ add_action( 'init', function(){
         'id'=>'sidebar-utama'
         ]);
 });
+
+
+
+// Action Hook Example: Send Tweet
+/// Tweet dikirim saat event publish post
+
+function publish_post_tweet($post_ID) {
+  global $post;
+  // Code to send a tweet with post info
+}
+add_action('publish_post', 'publish_post_tweet');
+
+// Filter Hook Example: Edit Jumlah Kata dalam Excerpt
+
+function excerpt_length_example() {
+ return 15;
+}
+add_filter( 'excerpt_length', 'excerpt_length_example' );
