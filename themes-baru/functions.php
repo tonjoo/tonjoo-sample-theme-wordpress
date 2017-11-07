@@ -44,6 +44,7 @@ function publish_post_tweet($post_ID) {
 }
 add_action('publish_post', 'publish_post_tweet');
 
+
 // Filter Hook Example: Edit Jumlah Kata dalam Excerpt
 
 function excerpt_length_example() {
